@@ -27,7 +27,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 45vh;
-  font-family: sans-serif;
+  font-family: "Neue Monteal", sans-serif;
 }
 
 section {
@@ -40,20 +40,21 @@ h1 {
   margin-bottom: 3rem;
   font-size: calc(2.5rem + 2.5vw);
   line-height: 1.05;
-
+  letter-spacing: -1.25px;
   /* font-size: clamp(50px, 5.5vw, 30rem); */
 }
 h2 {
-  margin-bottom: 0.25rem;
-  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.05;
 }
-p {
-  letter-spacing: -0.5px;
-}
+
 p,
 a {
-  font-family: monospace;
+  font-family: "Supply", monospace;
   color: #f1f1f1;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 a p {
@@ -87,7 +88,6 @@ a:hover {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   opacity: 0;
-  letter-spacing: -1px;
 }
 
 .upgrading {
