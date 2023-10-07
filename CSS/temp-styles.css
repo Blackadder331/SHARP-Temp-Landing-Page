@@ -33,11 +33,14 @@ body {
 section {
   text-align: center;
   color: #f1f1f1;
+  margin-top: 15rem;
 }
 
 h1 {
   margin-bottom: 3rem;
-  font-size: 3.5rem;
+  font-size: calc(2.5rem + 2.5vw);
+  line-height: 1.05;
+
   /* font-size: clamp(50px, 5.5vw, 30rem); */
 }
 h2 {
