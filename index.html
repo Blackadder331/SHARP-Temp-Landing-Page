@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Design and Development" />
+    <meta
+      name="keywords"
+      content="Design, Development, UI, UX, HTML, CSS, JavaScript, Front-end, Back-end, full-stack"
+    />
+    <meta name="author" content="Sharp Design Corp." />
+    <link rel="icon" type="image/x-icon" href="/IMG/favicon.png" />
+    <link rel="stylesheet" href="./CSS/temp-styles.css" />
+    <title>Sharp Design Corp.</title>
+  </head>
+  <body>
+    <section>
+      <div class="system-message">
+        <h1 class="upgrading">Upgrading...</h1>
+        <h1 class="wait">Please wait</h1>
+      </div>
+      
+      <div class="stat-container">
+        <h2>We’ll be fully-functional soon</h2>
+      <p>Identity DLC installing... 2.0 brand compiled</p>
+      <p>Skynet rebooting... weapons systems operational</p>
+      <p>Eagle One... the package is being delivered</p>
+      <br>
+        <div>
+          <p><span id="counter1">23,000</span> files created</p>
+          <br />
+          <p><span id="counter2">7,989</span> planets hacked</p>
+          <br />
+          <p><span id="counter3">16,897</span> logo sketches</p>
+          <br />
+          <p><span id="counter4">109</span> brands built</p>
+          <br />
+          <p><span id="counter5">157</span> sites launched</p>
+
+      </div>
+      
+    </section>
+    <section>
+      <a href="https://www.instagram.com/sharp.design.co/" target="_blank"
+        ><p>view work</p></a
+      >
+    </section>
+  </body>
+
+  <script>
+    // A function that takes an element id, a start value, an end value, and a duration
+    function animateCounter(id, start, end, duration) {
+      // Get the element by id
+      let element = document.getElementById(id);
+      // Calculate the increment per frame
+      let increment = (end - start) / (duration / 16.67);
+      // Set the current value to the start value
+      let current = start;
+      // Set an interval to update the element every 16.67 ms (60 fps)
+      let interval = setInterval(function () {
+        // Update the current value by adding the increment
+        current += increment;
+        // Round the current value to the nearest integer
+        current = Math.round(current);
+        // Set the element's innerHTML to the current value
+        element.innerHTML = current.toLocaleString();
+        // If the current value is equal or greater than the end value
+        if (current >= end) {
+          // Clear the interval
+          clearInterval(interval);
+          // Set the element's innerHTML to the end value
+          element.innerHTML = end.toLocaleString();
+          // Call the animateCounter function again after 5 seconds
+          setTimeout(function () {
+            animateCounter(id, start, end, duration);
+          }, 5000);
+        }
+      }, 16.67);
+    }
+
+    // Call the function for each counter element with different parameters
+    animateCounter("counter1", 0, 23000, 2000);
+    animateCounter("counter2", 0, 7989, 2000);
+    animateCounter("counter3", 0, 16897, 2000);
+    animateCounter("counter4", 0, 109, 2000);
+    animateCounter("counter5", 0, 157, 2000);
+  </script>
+</html>
