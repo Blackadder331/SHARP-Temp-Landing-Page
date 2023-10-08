@@ -1,16 +1,6 @@
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
 *,
-*::before,
-*::after {
+::after,
+::before {
   margin: 0;
   padding: 0;
 }
@@ -29,41 +19,35 @@ body {
   background-size: 45vh;
   font-family: "Neue Monteal", sans-serif;
 }
-
 section {
   text-align: center;
   color: #f1f1f1;
-  margin-top: 15rem;
+  margin-top: 5rem;
 }
-
 h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-size: calc(2.5rem + 2.5vw);
   line-height: 1.05;
   letter-spacing: -1.25px;
-  /* font-size: clamp(50px, 5.5vw, 30rem); */
 }
 h2 {
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
   line-height: 1.05;
 }
-
-p,
-a {
-  font-family: "Supply", monospace;
+a,
+p {
+  font-family: Supply, monospace;
   color: #f1f1f1;
   font-weight: 400;
   font-size: 12px;
 }
-
 a p {
   padding: 3rem;
 }
 a:hover {
   opacity: 0.5;
 }
-
 .system-message {
   position: relative;
   height: 5rem;
@@ -74,31 +58,33 @@ a:hover {
   width: 100vw;
 }
 .stat-container {
-  padding: 0 2rem;
+  padding: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  text-align: left;
+  outline: 0.5px solid #4a4a4a;
 }
 .upgrading,
 .wait {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%); /* This will center the messages */
+  transform: translate(-50%, -40%);
   width: 100vw;
   animation-name: flashing;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   opacity: 0;
 }
-
 .upgrading {
   z-index: 1;
 }
-
 .wait {
   z-index: 2;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
-
 @keyframes flashing {
   0% {
     opacity: 0;
@@ -109,8 +95,51 @@ a:hover {
   50% {
     opacity: 1;
   }
-  75%,
-  100% {
+  100%,
+  75% {
     opacity: 0;
+  }
+}
+.globe {
+  height: 150px;
+  mix-blend-mode: exclusion;
+  position: fixed;
+  right: 2rem;
+  bottom: 5.5rem;
+}
+@media screen and (max-width: 620px) {
+  .stat-container {
+    width: 67vw;
+  }
+  .globe {
+    height: 70px;
+    right: 18vw;
+    bottom: 4rem;
+  }
+  section {
+    margin-top: 0;
+  }
+  .system-message {
+    margin-bottom: 0;
+    height: auto;
+  }
+  .upgrading,
+  .wait {
+    display: block;
+    position: fixed;
+    transform: none;
+    left: auto;
+    top: auto;
+  }
+  a p {
+    display: block;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-height: 800px) {
+  a p {
+    padding-bottom: 18rem;
   }
 }
