@@ -11,6 +11,6 @@ docker build --tag temp-landing .
 docker stop $CONTAINER_ID
 docker rm $CONTAINER_ID
 docker run --detach --network proxy-compose_default --name=temp-landing --restart=always temp-landing
-docker images prune
+docker image prune -f
 
 echo "temp-landing is deployed"
