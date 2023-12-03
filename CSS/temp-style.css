@@ -17,7 +17,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 45vh;
-  font-family: "Neue Monteal", sans-serif;
+  font-family: "Neue Monteal", Helvetica, Arial, sans-serif;
 }
 section {
   text-align: center;
