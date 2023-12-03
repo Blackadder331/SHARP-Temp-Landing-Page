@@ -130,7 +130,7 @@ a:hover {
     margin-top: 0;
   }
   .system-message {
-    margin-bottom: 0;
+    margin-bottom: 4rem;
     height: auto;
   }
   .upgrading,
