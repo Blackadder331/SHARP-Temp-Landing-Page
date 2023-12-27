@@ -325,7 +325,7 @@ li a {
 
 .portfolio-grid-item {
   background-color: var(--cool-gray);
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 5 / 4;
   background-position: center;
   background-size: cover;
   opacity: 1;
@@ -400,9 +400,7 @@ a[aria-selected="true"] {
     grid-template-columns: auto auto auto;
   }
 
-  .portfolio-grid-item {
-    aspect-ratio: 5 / 4;
-  }
+  
 }
 
 /* MOBILE */
@@ -469,5 +467,9 @@ a[aria-selected="true"] {
     margin-top: 2.5rem;
     gap: 2.5rem;
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid-item {
+    aspect-ratio: 4 / 3;
   }
 }
