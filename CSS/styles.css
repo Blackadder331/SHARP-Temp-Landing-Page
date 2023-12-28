@@ -100,12 +100,23 @@ h1 {
   max-width: 15ch;
 }
 h2 {
-  font-size: 2.125rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-top: 1rem;
   max-width: 27ch;
+
+  font-size: 3rem;
+  margin: 5rem 0 3rem 0;
 }
 
+h3 strong,
+h3 {
+  font-size: 2rem;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+}
 p {
   font-family: neue-haas-grotesk-text, Helvetica, sans-serif;
   font-weight: 400;
@@ -145,7 +156,7 @@ small {
 
 .subhead {
   /* font-family: Supply-Regular; */
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-weight: 400;
   max-width: 70vw;
   text-wrap: balance;
@@ -159,11 +170,6 @@ small {
 
 .definition .armag-italic {
   color: var(--unseen-red);
-}
-
-h2 .line-return {
-  padding-bottom: 5rem;
-  line-height: 2.5;
 }
 
 body {
@@ -352,6 +358,13 @@ li a {
   background-position: 75% 50%;
 }
 
+.vision-hero {
+  background-image: url(/IMG/Vision/SHARP_vision_cover.jpg);
+  background-position: top;
+  background-size: cover;
+  background-position: 75% 25%;
+}
+
 .info {
   width: 100%;
 }
@@ -359,15 +372,26 @@ li a {
 /* Portfolio and Shop Grid */
 
 .portfolio-grid,
-.shop-grid {
+.shop-grid,
+.team-grid {
   margin-top: 4rem;
   display: grid;
   gap: 4rem;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
 }
 
-.shop-grid {
+.shop-grid,
+.team-grid {
   row-gap: 2.5rem;
+}
+
+.team-grid {
+  margin-top: 10rem;
+}
+
+.team-grid h3 {
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
 }
 
 .portfolio-grid-item {
@@ -385,6 +409,19 @@ li a {
 .shop-item {
   background-color: var(--cool-gray);
   aspect-ratio: 1 / 1;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.125s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-item {
+  background-color: var(--cool-gray);
+  aspect-ratio: 4 / 5;
   background-position: center;
   background-size: cover;
   opacity: 1;
@@ -429,12 +466,8 @@ li a {
 
 .two-col {
   display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 6rem;
-}
-
-.two-col div {
-  grid-column: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
 }
 
 .two-col h3 {
@@ -516,11 +549,11 @@ a[aria-selected="true"] {
   }
 
   .portfolio-grid {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .shop-grid {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 
   .abaddon {
@@ -551,27 +584,36 @@ a[aria-selected="true"] {
     column-gap: 6rem;
   }
 
-  .two-col h3 {
-    margin-bottom: 2rem;
-  }
-
   .abaddon {
     letter-spacing: 2.5vw;
     max-width: 20ch;
     font-size: 6.5rem;
   }
+
+  .skills h3 {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 960px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     line-height: 1.05;
+  }
+  h3 strong,
+  h3 {
+    font-size: 1.5rem;
   }
 
   .abaddon {
     letter-spacing: 2vw;
     max-width: 18ch;
     font-size: 4.5rem;
+  }
+
+  .definition {
+    font-size: 2.5rem;
+    /* margin-bottom: -1.5rem; */
   }
 
   nav,
@@ -634,5 +676,30 @@ a[aria-selected="true"] {
   .unseen-hero {
     background-position: 65% 75%;
     background-size: 180%;
+  }
+
+  .vision-hero {
+    background-position: 54% 40%;
+  }
+
+  h1 {
+    font-size: 3.25rem;
+    line-height: 1.05;
+  }
+  .definition {
+    font-size: 2.25rem;
+    /* margin-bottom: -1.5rem; */
+  }
+  .subhead {
+    margin-top: 0.5rem;
+  }
+  .menu__item {
+    font-size: 4.5rem;
+  }
+
+  .team-grid {
+    margin-top: 6rem;
+    gap: 4rem;
+    grid-template-columns: 1fr;
   }
 }
