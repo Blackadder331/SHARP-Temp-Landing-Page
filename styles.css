@@ -670,7 +670,7 @@ a[aria-selected="true"] {
   }
   .menu__item {
     font-size: 8svh;
-    padding: 2svh 0 3svh 0;
+    padding: 1.5svh 0 0 0;
   }
 
   .team-grid {
