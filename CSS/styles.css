@@ -1,4 +1,5 @@
 /* Brand Typefaces */
+@import url("https://use.typekit.net/hxn5vez.css");
 
 /* Supply */
 @font-face {
@@ -316,20 +317,20 @@ li a {
   z-index: -1;
   position: relative;
   background-color: var(--cool-gray);
-  background-image: url(/IMG/Projects/sharp-brand-cover-2.png);
+  background-image: url("/IMG/Projects/sharp-brand-cover-2.png");
   background-position: left;
   background-size: cover;
 }
 
 .unseen-hero {
-  background-image: url(/IMG/Projects/sight-unseen.jpg);
+  background-image: url("/IMG/Projects/sight-unseen.jpg");
   background-position: left;
   background-size: cover;
   background-position: 75% 50%;
 }
 
 .vision-hero {
-  background-image: url(/IMG/Projects/SHARP_vision_cover.jpg);
+  background-image: url("/IMG/Projects/SHARP_vision_cover.jpg");
   background-position: top;
   background-size: cover;
   background-position: 75% 25%;
