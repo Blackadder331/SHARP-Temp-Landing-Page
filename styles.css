@@ -283,7 +283,7 @@ li a {
   align-content: space-between;
   justify-content: space-around;
   align-items: flex-start;
-  height: 100vh;
+  height: 100svh;
 }
 .menu__item {
   display: block;
@@ -666,7 +666,8 @@ a[aria-selected="true"] {
   }
 
   .menu__box {
-    padding: 5rem 2.5rem 2.5rem 2.5rem;
+    padding: 5rem 2.5rem 5rem 2.5rem;
+    height: 100svh;
   }
   .menu__item {
     font-size: 8svh;
