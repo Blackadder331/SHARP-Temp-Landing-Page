@@ -322,14 +322,14 @@ li a {
 }
 
 .unseen-hero {
-  background-image: url(/IMG/Products/sight-unseen.jpg);
+  background-image: url(/IMG/Projects/sight-unseen.jpg);
   background-position: left;
   background-size: cover;
   background-position: 75% 50%;
 }
 
 .vision-hero {
-  background-image: url(/IMG/Vision/SHARP_vision_cover.jpg);
+  background-image: url(/IMG/Projects/SHARP_vision_cover.jpg);
   background-position: top;
   background-size: cover;
   background-position: 75% 25%;
