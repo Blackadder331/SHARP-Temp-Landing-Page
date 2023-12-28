@@ -667,10 +667,10 @@ a[aria-selected="true"] {
 
   .menu__box {
     padding: 5rem 2.5rem 2.5rem 2.5rem;
-}
+  }
   .menu__item {
-    font-size: 4rem;
-    padding: 1.5svh 0 2svh 0;
+    font-size: 8svh;
+    padding: 2svh 0 3svh 0;
   }
 
   .team-grid {
