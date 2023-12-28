@@ -3,20 +3,20 @@
 /* Supply */
 @font-face {
   font-family: Supply-Regular;
-  src: url(/Fonts/Supply-Regular.woff);
+  src: url("/Fonts/Supply-Regular.woff");
 }
 
 /* Armag */
 @font-face {
   font-family: Armag-Fury;
-  src: url(/Fonts/Armag-Fury.woff);
+  src: url("/Fonts/Armag-Fury.woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: Armag-FuryItalic;
-  src: url(/Fonts/Armag-FuryItalic.woff);
+  src: url("/Fonts/Armag-FuryItalic.woff");
   font-weight: 300;
   font-style: italic;
 }
@@ -113,6 +113,7 @@ small {
 .armag-italic {
   font-family: Armag-FuryItalic;
   font-weight: 300;
+  font-style: italic;
 }
 
 .abaddon {
@@ -322,14 +323,14 @@ li a {
 }
 
 .unseen-hero {
-  background-image: url("../../IMG/Projects/sight-unseen.jpg");
+  background-image: url("/IMG/Projects/sight-unseen.jpg");
   background-position: left;
   background-size: cover;
   background-position: 75% 50%;
 }
 
 .vision-hero {
-  background-image: url("../../IMG/Projects/SHARP_vision_cover.jpg");
+  background-image: url("/IMG/Projects/SHARP_vision_cover.jpg");
   background-position: top;
   background-size: cover;
   background-position: 75% 25%;
