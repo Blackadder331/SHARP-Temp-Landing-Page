@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Full-stack web design and development for the modern internet"
+    />
+    <meta
+      name="keywords"
+      content="Design, Development, UI, UX, HTML, CSS, JavaScript, Front-end, Back-end, full-stack"
+    />
+    <meta name="author" content="Sharp Design Corp." />
+    <link rel="icon" type="image/x-icon" href="/IMG/favicon.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/hxn5vez.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sharp Design Corp</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/">
+          <img
+            class="logo"
+            src="./IMG/SHARP_logo_white.svg"
+            alt="Sharp Design Corp"
+          />
+        </a>
+
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <div class="menu__container">
+            <ol class="menu__box">
+              <li>
+                <a
+                  class="menu__item blink"
+                  href="#"
+                  aria-selected="false"
+                  onclick="closeHamburgerMenu()"
+                  >Work</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu__item"
+                  href="shop"
+                  aria-selected="false"
+                  onclick="closeHamburgerMenu()"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu__item"
+                  href="vision"
+                  aria-selected="false"
+                  onclick="closeHamburgerMenu()"
+                  >Vision</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu__item"
+                  href="https://www.instagram.com/sharp.design.corp/"
+                  target="_blank"
+                  aria-selected="false"
+                  onclick="closeHamburgerMenu()"
+                  >Contact</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero four-hero">
+        <div class="info">
+          <h1>404</h1>
+          <br />
+          <!-- <p class="subhead">
+            It's dangerous to go alone <a href="/">Take this!</a>
+          </p> -->
+        </div>
+      </section>
+      <section class="pad-x">
+        <h3 class="four-text">
+          It's dangerous to go alone <a href="/">Take this.</a>
+        </h3>
+      </section>
+    </main>
+    <footer>
+      <small>
+        Copyright &copy;
+        <script>
+          document.write("2014–" + new Date().getFullYear());
+        </script>
+        <br />
+        Sharp Design Corp <br />All rights reserved
+      </small>
+
+      <img
+        onclick="topFunction()"
+        class="mark"
+        id="myBtn"
+        src="./IMG/SHARP_mark_coolgray_.svg"
+        alt="Sharp Design Corp dagger logomark"
+        role="button"
+      />
+    </footer>
+    <!-- SCRIPTS -->
+    <script>
+      // Scroll to top button
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // Close nav once clicked
+      function closeHamburgerMenu() {
+        document.getElementById("menu__toggle").checked = false;
+      }
+    </script>
+  </body>
+</html>

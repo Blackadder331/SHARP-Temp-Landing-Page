@@ -340,6 +340,20 @@ li a {
   width: 100%;
 }
 
+.four-hero {
+  background-image: url("/IMG/Projects/404.jpg");
+  background-position: right;
+}
+.four-text {
+  padding-top: 4rem;
+  font-weight: 400;
+}
+.four-text a {
+  font-family: neue-haas-grotesk-display, Helvetica, sans-serif;
+
+  font-weight: 400;
+  color: var(--light-color);
+}
 /* Portfolio and Shop Grid */
 
 .portfolio-grid,
@@ -567,6 +581,14 @@ a[aria-selected="true"] {
 }
 
 @media screen and (max-width: 960px) {
+  .four-text {
+    padding-top: 0rem;
+    max-width: 20ch;
+  }
+
+  .four-hero {
+    background-position: 50% 50%;
+  }
   h1 {
     font-size: 4rem;
     line-height: 1.05;
@@ -657,6 +679,10 @@ a[aria-selected="true"] {
     font-size: 3.25rem;
     line-height: 1.05;
   }
+  h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+  }
   .definition {
     font-size: 2.25rem;
     /* margin-bottom: -1.5rem; */
@@ -678,5 +704,12 @@ a[aria-selected="true"] {
     margin-top: 6rem;
     gap: 4rem;
     grid-template-columns: 1fr;
+  }
+
+  .sponsors {
+    max-width: 100%;
+  }
+  .sponsors {
+    column-gap: 0;
   }
 }
