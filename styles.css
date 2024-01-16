@@ -92,13 +92,13 @@ h3 {
 p {
   font-family: neue-haas-grotesk-text, Helvetica, sans-serif;
   font-weight: 400;
-  line-height: 2;
+  line-height: 2 !important;
   max-width: 70ch;
   font-size: 1rem;
 }
 
 .body-copy {
-  margin: 3.5rem 0 2rem 0;
+  margin: 1.5rem 0 3rem 0;
 }
 
 small {
@@ -456,7 +456,7 @@ li a {
   /* column-gap: 3rem; */
   /* row-gap: 3rem; */
   flex-basis: auto;
-  margin: 4rem 0 6rem 0;
+  margin: 0 0 6rem 0;
   flex-direction: row;
   align-items: center;
   align-content: space-between;
@@ -683,8 +683,11 @@ a[aria-selected="true"] {
 
   .sponsors {
     display: flex;
+    row-gap: 2rem;
+    flex-wrap: wrap;
     max-width: 75%;
     justify-content: space-between;
+    margin: 4rem 0 6rem 0;
   }
 }
 
