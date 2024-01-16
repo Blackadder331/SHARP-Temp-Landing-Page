@@ -47,6 +47,7 @@ html {
   --light-color: #eeeeee;
   --cool-gray: #53565a;
   --unseen-red: #df2027;
+  --green: #003a3f;
 
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -314,10 +315,10 @@ li a {
   justify-content: space-between;
   align-items: center;
 
-  z-index: -1;
+  z-index: -2;
   position: relative;
   background-color: var(--cool-gray);
-  background-image: url("/IMG/Projects/sharp-brand-cover-2.png");
+  background-image: url("/IMG/Projects/sharp-design-corp.jpg");
   background-position: left;
   background-size: cover;
 }
@@ -550,6 +551,10 @@ a[aria-selected="true"] {
 
 /* MOBILE */
 @media screen and (max-width: 1200px) {
+  .unseen-hero {
+    background-position: 75% 75%;
+  }
+
   h1 {
     font-size: 4.75rem;
   }
@@ -570,7 +575,7 @@ a[aria-selected="true"] {
   }
 
   .abaddon {
-    letter-spacing: 2.5vw;
+    letter-spacing: 1.75vw;
     max-width: 20ch;
     font-size: 6.5rem;
   }
@@ -600,7 +605,7 @@ a[aria-selected="true"] {
 
   .abaddon {
     letter-spacing: 2vw;
-    max-width: 18ch;
+    max-width: 17ch;
     font-size: 4.5rem;
   }
 
@@ -663,6 +668,21 @@ a[aria-selected="true"] {
     display: flex;
     max-width: 75%;
   }
+}
+
+/*GRADIENT */
+.hero {
+  position: relative;
+}
+
+.gradient-overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #003a3f, rgba(0, 58, 63, 0));
 }
 
 @media screen and (max-width: 540px) {
